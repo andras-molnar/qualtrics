@@ -1,4 +1,5 @@
-// This script hides the next button and lets the participant automatically proceed after selecting a response (works only with single choice options)
+/* This script hides the next button and lets the participant automatically proceed after selecting a response 
+(works only with single choice options) */
 
 var that = this;
 this.hideNextButton();
