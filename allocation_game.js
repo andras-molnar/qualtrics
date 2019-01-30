@@ -6,7 +6,7 @@ Put the following script in a Question javascript in Qualtrics.
 Make sure to create the embedded data 'taskPayment' and 'transfer' 
 in the Survey Flow before this script is executed. 
 
-CSS styles are at the bottom of this script. */
+CSS styles are in the file 'allocation_game.css' */
 
 Qualtrics.SurveyEngine.addOnload(function()
 {
