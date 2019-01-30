@@ -8,12 +8,13 @@ in the Survey Flow before this script is executed.
 
 CSS styles are at the bottom of this script. */
 
-
+Qualtrics.SurveyEngine.addOnload(function()
+{
 var body = this.getQuestionContainer();
 var sliderMax = 100; // set the total amount here
 var sliderMin = 0;
 var sliderStep=0.1; // set the increment here
-var sliderDefault = 5; // set the default allocation here
+var sliderDefault = 50; // set the default allocation here
 var sliderChosen = sliderDefault;
 var yourPayment = sliderMax - sliderDefault;
 var partnerPayment = sliderDefault;
@@ -86,3 +87,4 @@ function submitDecision (){
 	Qualtrics.SurveyEngine.setEmbeddedData( 'transfer', partnerPayment); // make sure to create the embedded data 'transfer' in the survey flow before this script is executed
 	page.clickNextButton();
 }
+});
