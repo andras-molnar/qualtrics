@@ -1,3 +1,5 @@
+// Animation credits: Anton Natarov, http://a.teall.info/dice/
+
 Qualtrics.SurveyEngine.addOnload(function()
 {
 	setTimeout(function () {
