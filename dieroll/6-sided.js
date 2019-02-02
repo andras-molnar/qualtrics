@@ -1,3 +1,5 @@
+Qualtrics.SurveyEngine.addOnload(function()
+{
 setTimeout(function () {
 			roll();
     },  1000);
@@ -13,3 +15,5 @@ function roll(){
 			document.getElementById("rollInfo").innerHTML = "You rolled: <strong>" + dieRoll + "</strong>." ;
     },  3000);
 }
+
+});
