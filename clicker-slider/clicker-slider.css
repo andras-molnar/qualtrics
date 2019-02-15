@@ -1,0 +1,57 @@
+.Skin .QuestionOuter {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    padding-bottom: 0px;
+}
+
+.buttonWrapper{
+  width: 170px;
+  border: 0px solid black;
+  margin: auto;
+  align-items: center;
+}
+
+.clickerButton {
+    background-color: #003b9b; /* Green */
+    border: none;
+    color: white!important;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.1s; /* Safari */
+    transition-duration: 0.1s;
+    cursor: pointer;
+}
+
+.clickerButton:active {
+    transform: scale(0.95);
+}
+
+.clickerButton:hover {
+    background-color: #3170d6;
+    color: white;
+}
+
+.progressBarWrapper {
+    width: 400px;
+    height: 20px;
+    border: 0px solid black;
+    border-collapse: collapse;
+    padding: 0px;
+    margin: auto;
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.progressBar {
+  background-color: blue;
+  color: white;
+  margin: 0px 0px;
+  width: 0px;
+  -webkit-transition-duration: .1s; /* Safari */
+  transition-duration: .1s;
+}
