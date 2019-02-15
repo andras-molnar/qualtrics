@@ -1,3 +1,7 @@
+This script creates an interface for a two-player allocation game (dictator game). It also saves the decision-maker's payment and the transfer as embedded data. You can customize the parameters (e.g., total amount, default amount, player names, etc.) in the JS.
+
+![](allocation-task.gif)
+
 <h2> HOW TO INSTALL</h2>
 
 1. Copy the CSS into Look & Feel > Style > Custom CSS.
