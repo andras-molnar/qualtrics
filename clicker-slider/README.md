@@ -1,5 +1,10 @@
 This script creates a progress bar that can be filled by clicking on a button. You can customize the 'click cost function', i.e. make it more or less difficult to fill the bar.
 
+![](clicker-slider.gif)
+
+
+<h2>HOW TO INSTALL</h2>
+
 1. Copy the HTML code into the question text of a Qualtrics question.
 2. Add the JS to the same question.
 3. Copy the CSS into Look & Feel > Style > CSS editor.
