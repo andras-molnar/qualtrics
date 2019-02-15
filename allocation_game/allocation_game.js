@@ -17,6 +17,7 @@ var sliderStep=0.1; // set the increment here
 var sliderDefault = 50; // set the default allocation here
 var sliderChosen = sliderDefault;
 var yourPayment = sliderMax - sliderDefault;
+var partnerName = "Person B";
 var partnerPayment = sliderDefault;
 var page = this;
 page.hideNextButton ();
@@ -32,7 +33,7 @@ function createSliderWrapper () {
   body.appendChild(sliderWrapper);
   
   var sliderQuestion = document.createElement("p");
-  sliderQuestion.innerHTML = "Please allocate $" + sliderMax + " between yourself and Person B.<br><br>";
+  sliderQuestion.innerHTML = "Please allocate $" + sliderMax + " between yourself and " + partnerName + ".<br><br>";
   sliderQuestion.setAttribute("class", "largeText");
   sliderWrapper.appendChild(sliderQuestion);
 
@@ -53,19 +54,19 @@ function createSliderWrapper () {
   sliderWrapper.appendChild(youLabel);         
   
   var partnerLabel = document.createElement("span"); 
-  partnerLabel.innerHTML = "Person B<br>$" + partnerPayment;
+  partnerLabel.innerHTML = partnerName + "<br>$" + partnerPayment;
   partnerLabel.setAttribute("class","rightText");
   sliderWrapper.appendChild(partnerLabel);
 
   
   confidenceScale.oninput = function() {
-	 yourPayment = (Math.round((sliderMax - this.value) * 10) / 10);
-    youLabel.innerHTML = "YOU:<br>$" + yourPayment;
+	  yourPayment = (Math.round((sliderMax - this.value) * 10) / 10);
+	  youLabel.innerHTML = "YOU:<br>$" + yourPayment;
 	  partnerPayment =  (Math.round( this.value * 10) / 10);
-    partnerLabel.innerHTML = "Person B:<br>$" + partnerPayment;
-    
-    setTimeout(function(){ 
-      if (document.getElementById("nextButtonWrapper") == null) { }}, 1000);
+	  partnerLabel.innerHTML = partnerName + "<br>$" + partnerPayment;
+	  setTimeout(function(){
+		  if (document.getElementById("nextButtonWrapper") == null) { }
+	  }, 1000);
   }
 }
 
