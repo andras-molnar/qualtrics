@@ -1,4 +1,4 @@
-This script creates a progress bar that can be filled by clicking on a button. You can customize the 'click cost function', i.e. make it more or less difficult to fill the bar. The progress (%), as well as the click count is saved as a Qualtrics embedded variable.
+This script creates a progress bar that can be filled by clicking on a button. You can customize the 'click cost function', i.e. make it more or less difficult to fill the bar. The progress (%), as well as the click count is saved as a Qualtrics embedded variable. You can change the text in the HTML.
 
 ![](clicker-slider.gif)
 
